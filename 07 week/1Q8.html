@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ouestion 8</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            background-color: #171717;
+        }
+        .container{
+            width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template-columns:repeat(4,210px);
+            grid-template-rows: repeat(2,45%);
+            align-content: space-around;
+            justify-content: space-evenly;
+        }
+        .container .one{
+            background-color: #00ffff;
+        }
+        .container .two{
+            background-color: #f0f8ff;
+        }
+        .container .three{
+            background-color: #daa520 ;
+        }
+        .container .four{
+            background-color: #d51abc;
+        }
+        .container .five{
+            background-color: #faab00;
+        }
+        .container .six{
+            background-color: #4d07ff;
+        }
+        .container .seven{
+            background-color: #ffd700;
+        }
+        .container .eight{
+            background-color: #8cff00;
+        }
+        .items{
+            border: 5px solid #dff0ff;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-transform: uppercase;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items one">#00ffff</div>
+        <div class="items two">#f0f8ff</div>
+        <div class="items three">#daa520</div>
+        <div class="items four">#d51abc</div>
+        <div class="items five">#faab00</div>
+        <div class="items six">#4d07ff</div>
+        <div class="items seven">#ffd700</div>
+        <div class="items eight">#8cff00</div>
+    </div>
+</body>
+</html>

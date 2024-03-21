@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1, initial-scale=1.0">
+    <title>ouestion 8</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow: visible;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            background-color: #131313;
+        }
+
+        .contaner {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .contaner .inear {
+            width: 80%;
+            height: 40%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: nowrap;
+            position: relative;
+
+        }
+        .in{
+            width: fit-content;
+            height: fit-content;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           
+        }
+
+        .contaner .inear .o {
+            position: relative;
+            left: 40px;
+            z-index: 10;
+        }
+
+        .contaner .inear .t {
+            position: relative;
+            left: 0px;
+            z-index: 8;
+
+        }
+
+        .contaner .inear .th {
+            position: relative;
+            left: -38px;
+            z-index: 7;
+
+        }
+
+        .contaner .inear .f {
+            position: relative;
+            left: -75px;
+            z-index: 5;
+
+        }
+        .contaner .inear .same {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            background-color: aqua;
+            border: 10px solid #f0f8ff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contaner">
+        <div class="inear">
+            <div class="in">
+                <div class="same o"></div>
+                <div class="same t"></div>
+                <div class="same th"></div>
+                <div class="same f"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

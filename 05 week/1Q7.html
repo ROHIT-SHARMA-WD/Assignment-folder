@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ouestion 7</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        body {
+            width: 100vw;
+            height: 100vh;
+            background-color: #181818;
+        }
+        .contaner {
+            width: 70%;
+            height: 100%;
+            background-color: #00ffff;
+            left: 15%;
+            padding: 5px;
+            position: relative;
+
+        }
+        .contaner .items {
+            width: 280px;
+            height: 350px;
+            text-align: center;
+            text-transform: capitalize;
+            border-radius: 10px;
+            border: 2px solid;
+            padding: 5px;
+            font-size: 1.5rem;
+            position: absolute;
+            
+        }
+        .items:nth-child(2){
+            background-color: #ff0000;
+            top: 100px;
+            left: 150px;
+        }
+        .items:nth-child(2):hover{
+            z-index: 300;
+        }
+        .items:nth-child(3){
+            background-color: #00ff00;
+            top: 200px;
+            left: 250px;
+        }
+        .items:nth-child(4){
+            background-color: #0000ff;
+            top: 300px;
+            left: 350px;
+        }
+        h1{
+            text-transform: capitalize;
+            text-align: center;
+            margin: 5px;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div class="contaner">
+        <h1>hover to unvil</h1>
+        <div class="items one">card 1</div>
+        <div class="items">card 2</div>
+        <div class="items">card 3</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ouestion 7</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            width: 100vw;
+            height: 100vh;
+            background:linear-gradient(to top, #041842f5, #220974da);
+            padding: 10px;
+        }
+
+        .container {
+            width: 100%;
+            height: 100%;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 25px;
+        }
+
+        .one {
+            background-image: url(doing.png);
+            background-repeat: no-repeat;
+            background-position: bottom;
+            background-size: cover;
+            background-color: #00000084;
+            background-blend-mode: darken;
+        }
+        .one:hover {
+            background-image: url(doing.png);
+            background-repeat: no-repeat;
+            background-position: top;
+            background-size: cover;
+            background-color: #00000084;
+            background-blend-mode: darken;
+        }
+
+        .two {
+            background-image: url(fore.png);
+            background-repeat: no-repeat;
+            background-position: right;
+            background-size: cover;
+        }
+        .two:hover {
+            background-image: url(fore.png);
+            background-repeat: no-repeat;
+            background-position: left;
+            background-size: cover;
+        }
+
+        .three {
+            background-image: url(one.png);
+            background-repeat: no-repeat;
+            background-position: bottom;
+            background-size: cover;
+        }
+        .three:hover {
+            background-image: url(one.png);
+            background-repeat: no-repeat;
+            background-position: top;
+            background-size: cover;
+        }
+
+        .four {
+            background-image: url(six.png);
+            background-repeat: no-repeat;
+            background-position: left;
+            background-size: cover;
+        }
+        .four:hover {
+            background-image: url(six.png);
+            background-repeat: no-repeat;
+            background-position: right;
+            background-size: cover;
+        }
+
+        .five {
+            background-image: url(three.png);
+            background-repeat: no-repeat;
+            background-position: left;
+            background-size: cover;
+        }
+        .five:hover{
+            background-image: url(three.png);
+            background-repeat: no-repeat;
+            background-position: right;
+            background-size: cover;
+        }
+
+        .six {
+            background-image: url(two.png);
+            background-repeat: no-repeat;
+            background-position: bottom;
+            background-size: cover;
+        }
+        .six:hover {
+            background-image: url(two.png);
+            background-repeat: no-repeat;
+            background-position: top;
+            background-size: cover;
+        }
+
+        .ph {
+            background-color: #111111b3;
+            background-blend-mode: hard-light;
+            transition: 1s;
+        }
+
+        .ph:hover {
+            background-blend-mode: multiply;
+            /* background-position: center; */
+            background-size: cover;
+            background-color: rgb(255, 255, 255, 0.8);
+
+        }
+
+        .items {
+            /* border: 1px solid; */
+            border-radius: 10px;
+        }
+
+        .s-r {
+            grid-row: span 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class=" ph items one">1</div>
+        <div class=" ph items two s-r">2</div>
+        <div class=" ph items three">3</div>
+        <div class=" ph items four s-r">4</div>
+        <div class=" ph items five s-r">5</div>
+        <div class=" ph items six">6</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ouestion 6</title>
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+         }
+         body{
+            width: 100vw;
+            height: 100vh;
+            background-color: #e2f0fb;
+         }
+         .main-con{
+            width:100%;
+            height: 100%;
+            background-color: antiquewhite;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+         }
+         .main-con .text{
+            width: 100%;
+            height: 10%;
+            display: flex;
+            align-items: end;
+            justify-content: center;
+            text-transform: capitalize;
+            font-size: 1.2rem;
+            font-weight: 600;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+         }
+         .main-con .container{
+            width: 100%;
+            height: 90%;
+            padding: 20px;
+            
+         }
+         .main-con .container table{
+            border: 2px solid;
+            width: 100%;
+            height: 100%;
+            
+        }
+        th{
+            background-color: tomato;
+        }
+        td{
+            background-color: aqua;
+        }
+         th,td{
+            border: 1.5px dashed;
+            text-transform: capitalize;
+            text-align: center;
+            
+         }
+         .c-s{
+            column-span:2;
+            background-color: red;
+         }
+         .p{
+            background-color: #3c1c9c;
+         }
+         .y{
+            background-color: yellow;
+            border: none;
+         }
+    </style>   
+</head>
+<body>
+    <div class="main-con">
+        <div class="text">
+            <h1>time tabel</h1>
+        </div>
+        <div class="container">
+            <table>
+                <tr>
+                    <th>time</th>
+                    <th>AM-AM</th>
+                    <th>AM-AM</th>
+                    <th>AM-AM</th>
+                    <th>AM-AM</th>
+                    <th>AM-AM</th>
+                    <th>AM-AM</th>
+                    <th>AM-AM</th>
+                </tr>
+                <tr>
+                    <td class="p">monday</td>
+                    <td>english</td>
+                    <td>biology</td>
+                    <td>physics</td>
+                    <td>chemistry</td>
+                    <td class="y">l</td>
+                    <td class="c-s" colspan="2">chemistry LAB</td>
+                </tr>
+                <tr>
+                    <td class="p">tuesday</td>
+                    <td class="c-s" colspan="2">biology LAB</td>
+                    <td>physics</td>
+                    <td>chemistry</td>
+                    <td  class="y">u</td>
+                    <td>english</td>
+                    <td>biology</td>
+                </tr>
+                <tr>
+                    <td class="p">wednesday</td>
+                    <td>english</td>
+                    <td>biology</td>
+                    <td>physics</td>
+                    <td>chemistry</td>
+                    <td class="y">n</td>
+                    <td class="c-s" colspan="2">GAME</td>
+                </tr>
+                <tr>
+                    <td class="p">thrusday</td>
+                    <td class="c-s" colspan="2">biology LAB</td>
+                    <td>physics</td>
+                    <td>chemistry</td>
+                    <td class="y">c</td>
+                    <td>english</td>
+                    <td>biology</td>
+                </tr>
+                <tr>
+                    <td class="p">friday</td>
+                    <td>english</td>
+                    <td>biology</td>
+                    <td>physics</td>
+                    <td>chemistry</td>
+                    <td class="y">h</td>
+                    <td class="c-s" colspan="2">physics lab</td>
+                </tr>
+                <tr>
+                    <td class="p">saturday</td>
+                    <td class="c-s" colspan="2">biology LAB</td>
+                    <td>physics</td>
+                    <td>chemistry</td>
+                    <td class="y">break</td>
+                    <td class="c-s" colspan="2">LET OFF</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

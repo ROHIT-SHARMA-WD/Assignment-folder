@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ouestion 6</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: aliceblue;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            background-color: #1c1c1c;
+        }
+
+        .contner {
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .contner .inear {
+            width: 50%;
+            height: 40%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: start;
+        }
+
+        .contner .inear h1 {
+            font-size: 5rem;
+            font-weight: 700;
+            margin-bottom: 25px;
+            font-family: 'Courier New', Courier, monospace;
+            text-transform: capitalize;
+        }
+        .contner .inear .in-text{
+            background-color:none;
+            width: 100%;
+            position: relative;
+        }
+        .contner .inear .in-text .s{
+            position: absolute;
+            top: 10px;
+            left: 12px;
+        }
+        .contner .inear .in-text .m{
+            position: absolute;
+            top: 10px;
+            right: 50px;
+        }
+        .contner .inear .in-text .c{
+            position: absolute;
+            top: 10px;
+            right: 17px;
+        }
+        i{
+            cursor: pointer;
+        }
+        .contner .inear input {
+            width: 100%;
+            height: 35px;
+            border-radius: 50px;
+            padding: 0px 70px 0px 40px;
+            font-size: 1rem;
+            text-transform: capitalize;
+            border: 1px solid azure;
+            background-color: transparent;
+        }
+        .contner .inear input:focus{
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contner">
+        <div class="inear">
+            <h1>googel</h1>
+            <div class="in-text">
+                <i class="fa-solid fa-magnifying-glass s"></i>
+                <input type="text" placeholder="search">
+                <i class="fa-solid fa-microphone m"></i>
+                <i class="fa-solid fa-camera c"></i>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

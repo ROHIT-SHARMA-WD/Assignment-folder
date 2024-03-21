@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>ouestion 2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            background-color: #b3cbe0;
+
+        }
+
+        .main-con {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            flex: wrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .main-con .uper-text {
+            width: 100%;
+            height: 15%;
+            background-color: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .uper-text h2 {
+            text-transform: capitalize;
+            font-size: 2.5rem;
+            font-weight: 700;
+            font-family: sans-serif;
+            color: #7233f0;
+
+        }
+
+        .uper-text p {
+            text-transform: capitalize;
+            font-size: 0.7rem;
+            font-weight: 500;
+            font-family: serif;
+            color: #686868;
+        }
+
+        /* ************************* */
+
+        .main-con .cards-con {
+            width: 100%;
+            height: 85%;
+            background-color: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .cards-con .cards {
+            width: 85%;
+            height: 100%;
+            padding: 10px;
+            padding-top: 45px;
+            background-color: transparent;
+            /* 'we have just do for more cards'    overflow-y: scroll; */
+            display: flex;
+            flex-wrap: wrap;
+            gap: 47px;
+        }
+
+        .cards-con .cards .card-items {
+            width: 30%;
+            height: 75%;
+            border-radius: 10px;
+            background-color: #efefef;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+        .cards-con .cards .card-items .img{
+            width: 100%;
+            height: 50%;
+            margin-bottom: 15px;
+        }
+        .cards-con .cards .card-items img{
+            width: 100%;
+            height: 100%;
+            margin-bottom: 15px;
+        }
+        .cards-con .cards .card-items .c-d-text{
+           margin-bottom: 10px;
+           text-transform: capitalize;
+           word-spacing: 5px;
+           font-weight: 700;
+           font-size: 1.2rem;
+           color: #7233f0;
+            font-family: sans-serif;
+
+        }
+        .cards-con .cards .card-items h4{
+            margin-bottom: 10px;
+           text-transform: capitalize;
+           word-spacing: 5px;
+           font-weight: 100;
+           font-size: 0.8rem;
+           font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+           
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-con">
+        <div class="uper-text">
+            <h2>community programs</h2>
+            <p>open to all pro-live classes on youtube for free</p>
+        </div>
+        <div class="cards-con">
+            <div class="cards">
+                <div class="card-items item1">
+                    <div class="img"><img src="https://cdn.pwskills.com/assets/uploads/thumbnails/6448ca86508654220671ad2d.jpg" alt="img"></div>
+                    <h3 class="c-d-text">Masterclass Understanding APIs in Web Development with RoadMap</h3>
+                    <h4>rohit</h4>
+                    <h3 class="free">FREE</h3>
+                </div>
+                <div class="card-items item2">
+                    <div class="img"><img src="https://cdn.pwskills.com/assets/uploads/thumbnails/64426c32508654fb0f7168bd.jpg" alt="img"></div>
+                    <h3 class="c-d-text">MasterClass Important of DSA in Modern Programming</h3>
+                    <h4>rohit</h4>
+                    <h3 class="free">FREE</h3>
+                </div>
+                <div class="card-items item3">
+                    <div class="img"><img src="https://cdn.pwskills.com/assets/uploads/thumbnails/64564dbd6977cc2c46dd3899.jpg" alt="img"></div>
+                    <h3 class="c-d-text">Masterclass Crack the Coding Interview <br> <br></h3>
+                    <h4>rohit</h4>
+                    <h3 class="free">FREE</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

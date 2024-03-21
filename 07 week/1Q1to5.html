@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ouestion 1 to 5</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #000000;
+        }
+
+        body {
+            background-color: white;
+            width: 100%;
+            height: 1615px;
+
+        }
+
+        .container {
+            /* padding: 0px 5px; */
+            /* border: 1px solid red; */
+            width: 100%;
+            height: 1615px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 55px 510px 350px 300px 400px;
+            justify-content: center;
+            gap: 10px;
+            /* grid-template-rows:0.3fr 2.6fr 1.7fr 1.5fr 2fr;  */
+        }
+
+        .s-c {
+            grid-column: span 2;
+        }
+
+        /*  */
+        .header {
+            padding: 0px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+
+        .header .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-transform: capitalize;
+        }
+
+        .header .nav ul {
+            list-style-type: none;
+            text-transform: capitalize;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+
+        .header .butt button {
+            padding: 10px 45px;
+            background-color: #93ff2f;
+            border-radius: 5px;
+            border: none;
+            text-transform: capitalize;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        /*  */
+        /*  */
+        .text {
+            padding: 0px 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        .text h1 {
+            text-transform: capitalize;
+            font-size: 3rem;
+            font-weight: 700;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+
+        .text p {
+            font-family: 'Times New Roman', Times, serif;
+            color: #6c6c6c;
+        }
+
+        .text button {
+            padding: 10px 45px;
+            background-color: #93ff2f;
+            border-radius: 1px;
+            border: none;
+            font-size: 1.2rem;
+            text-transform: capitalize;
+            font-weight: 400;
+            cursor: pointer;
+            background-color: #000000;
+            color: #f0f8ff;
+        }
+
+        /* */
+        .images {
+            background-image: url(https://images.pexels.com/photos/709567/pexels-photo-709567.jpeg?auto=compress&cs=tinysrgb&w=600 );
+            background-size: cover;
+           background-position: center;
+        }
+
+        /*  */
+        .service {
+            background-image : url(services.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-origin: center;
+
+        }
+
+        /*  */
+        .order {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+        }
+
+        .order .same {
+            width: 270px;
+            height: 270px;
+            border: 1px solid;
+            border-radius: 10px;
+            padding: 5px;
+            background-color: #dfeffe;
+
+        }
+
+        .order .same .image {
+            width: 100%;
+            height: 60%;
+            border-radius: 10px;
+            background-image: url(https://images.pexels.com/photos/16143086/pexels-photo-16143086/free-photo-of-a-bowl-of-ramen-noodles.jpeg?auto=compress&cs=tinysrgb&w=600);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin-bottom: 25px;
+
+        }
+
+        .order .same h3 {
+            margin-bottom: 5px;
+            font-size: 1.5rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .footer {
+            background-color: #2a15041c;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .footer .same {
+            width: 25%;
+            height: 80%;
+        }
+
+        .footer .image {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .footer .one{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: start;
+            position: relative;
+        }
+        .footer .one div h4{
+            position: absolute;
+            bottom: 0;
+            text-transform: capitalize;
+            display: block;
+            width: 100%;
+            white-space: 5px;
+            letter-spacing: 1px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .footer .one  h2{
+            font-size: 1.7rem;
+            font-weight: 700;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding-bottom: 15px;
+        }
+        .footer .one ul li{
+            list-style-type: none;
+            text-transform: capitalize;
+            padding: 0px 0px 10px 15px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: 600;
+        }
+
+
+
+
+        .footer .two{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: start;
+        }
+        .footer .two h2{
+            font-size: 1.7rem;
+            font-weight: 700;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding-bottom: 15px;
+        }
+        .footer .two ul li{
+            list-style-type: none;
+            text-transform: capitalize;
+            padding: 0px 0px 10px 15px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item header s-c">
+            <div class="h logo">
+                <h2>.logo</h2>
+            </div>
+            <div class="h nav">
+                <ul>
+                    <li>home</li>
+                    <li>about</li>
+                    <li>service</li>
+                </ul>
+            </div>
+            <div class="h butt">
+                <button>login</button>
+            </div>
+        </div>
+        <div class="item text">
+            <h1>haelthy food</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, ad est iusto dolores autem cumque iure
+                voluptatibus ex doloremque ratione commodi qui ducimus, amet, sapiente odio labore aliquid consequuntur
+                necessitatibus. Suscipit fugit quas a temporibus animi eveniet illo, excepturi molestias deserunt cum,
+                assumenda voluptates corporis natus vel quo perferendis ducimus. </p>
+            <button>read more</button>
+        </div>
+        <div class="item images">
+
+        </div>
+        <div class="item service s-c">
+           <!-- service image --> 
+        </div>
+        <div class="item order s-c">
+            <div class="same">
+                <div class="image">
+
+                </div>
+                <h3>Order</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="same">
+                <div class="image">
+
+                </div>
+                <h3>Order</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="same">
+                <div class="image">
+
+                </div>
+                <h3>Order</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+        <div class="item footer s-c">
+            <div class="same image">
+                <img src="https://img.freepik.com/free-vector/world-vegan-day-logo-design_1308-116434.jpg?size=626&ext=jpg&ga=GA1.2.298649952.1686724452&semt=ais"
+                    alt="" width="270">
+            </div>
+            <div class="same one">
+                <div>
+                    <h2>Navigation link</h2>
+                    <ul>
+                        <li>rohit</li>
+                        <li>rohit</li>
+                        <li>rohit</li>
+                        <li>rohit</li>
+                        <li>rohit</li>
+                    </ul>
+                    <h4>&#169; copyright all right reserved</h4>
+                </div>
+            </div>
+            <div class="same two">
+                <div>
+                    <h2>Navigation link</h2>
+                    <ul>
+                        <li>rohit</li>
+                        <li>rohit</li>
+                        <li>rohit</li>
+                        <li>rohit</li>
+                        <li>rohit</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
